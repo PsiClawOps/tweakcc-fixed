@@ -1232,7 +1232,11 @@ const NEW_PROMPT_ASSIGNMENTS = [
     id: 'system-reminder-lines-selected-in-ide',
     description:
       'Reminder injected when the user selects lines in their IDE, giving the file, line range, and selected content',
-    identifierMap: { 0: 'ATTACHMENT_OBJECT', 1: 'TRUNCATED_CONTENT' },
+    identifierMap: {
+      0: 'ATTACHMENT_OBJECT',
+      1: 'ESCAPE_UNTRUSTED_TEXT_FN',
+      2: 'TRUNCATE_CONTENT_FN',
+    },
   },
   {
     // 2.1.186 net-new: injected into the message content array (U.push(Ln({
@@ -2019,7 +2023,11 @@ const NEW_PROMPT_ASSIGNMENTS = [
     name: 'System Reminder: Compact file reference',
     id: 'system-reminder-compact-file-reference',
     description: 'Reference to file read before conversation summarization',
-    identifierMap: { 0: 'ATTACHMENT_OBJECT', 1: 'READ_TOOL_OBJECT' },
+    identifierMap: {
+      0: 'ESCAPE_UNTRUSTED_TEXT_FN',
+      1: 'ATTACHMENT_OBJECT',
+      2: 'READ_TOOL_NAME',
+    },
   },
   {
     matcher: t =>
@@ -2047,9 +2055,10 @@ const NEW_PROMPT_ASSIGNMENTS = [
     id: 'system-reminder-file-truncated',
     description: 'Notification that file was truncated due to size',
     identifierMap: {
-      0: 'ATTACHMENT_OBJECT',
-      1: 'MAX_LINES_CONSTANT',
-      2: 'READ_TOOL_OBJECT',
+      0: 'ESCAPE_UNTRUSTED_TEXT_FN',
+      1: 'ATTACHMENT_OBJECT',
+      2: 'MAX_LINES_CONSTANT',
+      3: 'READ_TOOL_NAME',
     },
   },
   {
