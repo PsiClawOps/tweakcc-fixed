@@ -60743,5 +60743,18 @@
   },
   "e27f1a5acebf5a2f44592cf8fee9dc525dc0d8d6": { "facing": "internal" },
   "6cbcae3986445a7d8c1d403f0c4287fb83610b9e": { "facing": "ui" },
-  "e7e2a766b4fed357b4b23fadbf46dcf231853e43": { "facing": "ui" }
+  "e7e2a766b4fed357b4b23fadbf46dcf231853e43": { "facing": "ui" },
+  "ef224fddacdcac5967b7a92656693789ea1c5e89": { "facing": "ui" },
+  "c2740433e6438e6ecf0b975b3728abc329e15e7c": {
+    "facing": "model",
+    "id": "tool-result-subagent-spawn-hook-rewrite-ruled",
+    "name": "Subagent Spawn Hook Rewrite Ruled",
+    "desc": "Agent-tool error when a plugin agent.spawn hook rewrites the spawn into one a permission rule blocks."
+  },
+  "297b16b36b6121dd87da91f51261f3d0f618da9c": { "facing": "ui" },
+  "cb0cd5091834864f99dc256b54d7640ae7280857": { "facing": "internal" },
+  "06225ce88a48e39f0407745ec36998e9252a1648": { "facing": "ui" },
+  "380542811a81149e6610c0b7b406595ed9d3e897": { "facing": "ui" },
+  "5eec86dcd8d49a46386d71f80aff546eb48d6189": { "facing": "ui" },
+  "3e585f6ce28cce31db65765e069321cbe397ec66": { "facing": "ui" }
 }
